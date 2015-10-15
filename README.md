@@ -5,6 +5,7 @@ PhyloCore User Manual
 
  
 ======================== DEPENDENCY======================== 
+
 PhyloCore depends on Bioperl. Make sure that Bioperl 1.5.2 or later (http://www.bioperl.org/wiki/Getting_BioPerl) is installed.
 
 A script named 'install.pl' is also included with PhyloCore to check and install Bioperl automatically. You need the privilege of the system administrator to run the script. See below for instructions.
