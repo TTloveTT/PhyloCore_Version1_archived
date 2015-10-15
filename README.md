@@ -44,6 +44,7 @@ A script named 'install.pl' is also included with PhyloCore to check and install
 
 
 ======================== OUTPUT FILES ========================
+
 PhyloCore generates a tab-delimited table, which contains the relative abundance of core taxa in each sample. Core taxa are listed in first column and sample IDs are listed in first row. The last column contains taxonomy for each core taxon.
 
 If user specifies a sample ID list, PhyloCore will also generate a table with only samples in the list.
@@ -59,6 +60,7 @@ Test dataset is provided for troubleshooting.
 	RUN test: perl PhyloCore.pl -i test/otu_table.txt [-t test/rep_set.tre] [-s ID_list.txt]
 
 SYNOPSIS
+
      PhyloCore.pl [options]{-i OTU table}
 
        [] indicates optional input (order unimportant)
@@ -87,6 +89,7 @@ SYNOPSIS
 		PhyloCore.pl -man
 
 OPTIONS
+
        -help or -h
                Print a brief help message and exits.
 
@@ -109,14 +112,17 @@ OPTIONS
               The final taxon for each core will be the lowest common taxonomy shared by the majority of OTUs. The majority threshold is defined by lct_cutoff (0.8 means find the lowest common taxonomy shared by at least 80% of all OTUs in this core node). Default: 0.8
 
 DESCRIPTION
+
        The program takes a phylogenetic tree and an OTU-table as input and produces a relative abundance table containing all Core taxa.
 
 
  
 ======================== CITATION ======================== 
+
 When publishing work that is based on the results from PhyloCore please cite: ########
 
 ======================== LICENSE ========================  
+
 PhyloCore is free software: you may redistribute it and/or modify its under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version.
 
 PhyloCore is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details (http://www.gnu.org/licenses/).
